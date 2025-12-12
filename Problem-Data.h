@@ -30,11 +30,11 @@ static PT_vector_T PD_lo;			// Lower bound
 static PT_column_T PD_norm_a;		// Column of norms of matrix rows
 
 static PT_vector_T PD_v;			// Current vertex
-static double PD_A_v[PP_NE][PP_NE];	// A_basis_v * v = basis_b
-static double PD_AI_v[PP_NE][PP_NE];// AI_basis_v is the inverse matrix to A_basis_v
+static double PD_A0[PP_NE][PP_NE];	// A_basis_v * v = basis_b
+static double PD_A0I[PP_NE][PP_NE];// AI_basis_v is the inverse matrix to A_basis_v
 static PT_column_T PD_u;			// Dual point
 
-static int PD_neHyperplanes_v[PP_MM];	// Total index of all hyperplanes that include vertex v
+static int PD_Hyperplanes_v[PP_MM];	// Total index of all hyperplanes that include vertex v
 static int PD_m_v;						// Total number of hyperplanes that include vertex v
 
 static int PD_basis_v[PP_MM];	// Basis index of hyperplanes that include vertex v

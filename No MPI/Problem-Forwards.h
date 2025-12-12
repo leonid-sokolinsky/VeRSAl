@@ -9,11 +9,13 @@ This source code has been produced with using BSF-skeleton
 #include "Problem-Types.h"
 //====================== Private Functions =====================================
 namespace PF {
-	void	MakeBasis_v(PT_vector_T v, PT_vector_i_T basis_v);
-	bool	OptimumIsFound(double eps_zero);
 	void	ExtendedLP(void);
+	void	Lambda(PT_vector_T v, PT_vector_T y, double* lambda_min, int* j_star, double eps_zero);
 	void	List_i_Redundant(int* list_i, int mi, int rank, int* redundant_i, int* mr, double eps_zero);
+	void	MakeBasis_v(PT_vector_T v, PT_vector_i_T basis_v);
+	void	Make_y(PT_vector_i_T basis_v, int i_star, PT_vector_T y);
 	void	MakeHyperplane_x(PT_vector_T x, int* neHyperplanes_x, int* mneh_x, double eps_on_hyperplane);
+	bool	OptimumIsFound(double eps_zero);
 	void	PreparationForIteration(PT_vector_i_T basis_v);
 }
 //====================== Shared Functions ======================================

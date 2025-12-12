@@ -41,9 +41,9 @@ This source code has been produced with using BSF-skeleton
 
 //-------------------------- Compilation Modes ---------------------------------
 #define PP_DEBUG
-#define PP_NORMALIZATION
 //#define PP_MATRIX_OUTPUT
-//#define PP_SAVE_RESULT
+#define PP_SAVE_RESULT
+#define PP_SF_LIST_I_BASIS_GAUGE
 
 //================================ Problem Paramrters ==========================
 #define PP_MM							(PP_M+3*PP_N)	// Maximal number of constraints
