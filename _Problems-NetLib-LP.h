@@ -24,8 +24,9 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_N 97	// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 		-225494.96316238038228101176621492
 //------------------------------------------------------------------------------
-#define PP_EPS_ZERO					1E-11		// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE		1E-8		// Accuracy of belonging to hyperplane
+#define PP_EPS_ZERO				1E-11	// Accuracy for comparison with zero
+#define PP_EPS_ON_HYPERPLANE	1E-8	// Accuracy of belonging to hyperplane
+#define PP_EPS_RELATIVE_ERROR	1E-8	// Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 // Elapsed time: 0
 // Number of iterations: 17
@@ -43,8 +44,9 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_N 32			// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 464.75314285714285714285714285714
 //------------------------------------------------------------------------------
-#define PP_EPS_ZERO						1E-11		// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE			1E-10		// Accuracy of belonging to hyperplane
+#define PP_EPS_ZERO				1E-11		// Accuracy for comparison with zero
+#define PP_EPS_ON_HYPERPLANE	1E-10		// Accuracy of belonging to hyperplane
+#define PP_EPS_RELATIVE_ERROR	1E-8	// Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 // Elapsed time: 0
 // Number of iterations: 1
@@ -60,8 +62,9 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_N 163	// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 		35991767.286576506712640824319636
 //------------------------------------------------------------------------------
-#define PP_EPS_ZERO					1E-10		// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE		1E-9		// Accuracy of belonging to hyperplane
+#define PP_EPS_ZERO				1E-10	// Accuracy for comparison with zero
+#define PP_EPS_ON_HYPERPLANE	1E-8	// Accuracy of belonging to hyperplane
+#define PP_EPS_RELATIVE_ERROR	1E-8	// Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 // Elapsed time: 1
 // Number of iterations: 101
@@ -107,7 +110,7 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 // Distance to polytope: 2.2458705e-13
 //------------------------------------------------------------------------------
 
-/*============================== blend LP problem ==============================*
+/*============================== blend LP problem ==============================*/
 // Number of equations: 43
 // Subspace dimension: 40
 #define PP_PROBLEM_NAME		"blend"
@@ -115,8 +118,9 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_N 83			// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 30.812149845828220173774356124984	// Exact maximum value of objective function
 //------------------------------------------------------------------------------
-#define PP_EPS_ZERO					1E-8	// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE		1E-8	// Accuracy of belonging to hyperplane
+#define PP_EPS_ZERO				1E-8	// Accuracy for comparison with zero
+#define PP_EPS_ON_HYPERPLANE	1E-8	// Accuracy of belonging to hyperplane
+#define PP_EPS_RELATIVE_ERROR	1E-8	// Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 // The zero point is vertex!
 //------------------------------------------------------------------------------
@@ -203,6 +207,7 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_M 174	// Number of constraints in mps-file
 #define PP_N 142	// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 896644.82186304572966200464196045	// Exact maximum value of objective function
+#define PP_EPS_RELATIVE_ERROR 1E-8 // Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 #define PP_EPS_ZERO					1E-11	// Accuracy for comparison with zero
 #define PP_EPS_ON_HYPERPLANE		1E-10	// Accuracy of belonging to hyperplane
@@ -328,45 +333,6 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 // Distance to polytope: 2.033692e-13
 //------------------------------------------------------------------------------
 
-/*============================== scsd1 LP problem =============================*
-// Number of equations: 77
-// Subspace dimension : 683
-#define PP_PROBLEM_NAME	"scsd1"
-#define PP_M 77		// Number of constraints in mps-file
-#define PP_N 760		// Number of variables in mps-file
-#define PP_MAX_OBJ_VALUE -8.6666666743333647292533502995263	// Exact maximum value of objective function
-//------------------------------------------------------------------------------
-#define PP_EPS_ZERO				1E-8	// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE	1E-7	// Accuracy of belonging to hyperplane
-//------------------------------------------------------------------------------
-// Elapsed time: 23
-// Number of iterations: 65
-// Computed objective value:    1
-// Target objective value:      1
-// Relative error = 0
-// Distance to polytope: 1.2979089e-16
-//------------------------------------------------------------------------------
-
-/*============================== share1b LP problem ============================*
-// Number of equations: 89
-// Subspace dimension: 136
-#define PP_PROBLEM_NAME		"share1b"
-#define PP_M 117	// Number of constraints in *.mps
-#define PP_N 225	// Number of variables in *.mps
-#define PP_MAX_OBJ_VALUE 76589.31857918568112797274346007 // Exact maximum value of objective function
-//--------------------------------------------------------------------------
-#define PP_EPS_ZERO				1E-10	// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE	1E-5	// Accuracy of belonging to hyperplane
-#define PP_EPS_RELATIVE_ERROR	1E-6	// Acceptable error for optimum of objective function 
-//------------------------------------------------------------------------------
-/// Elapsed time: 7
-// Number of iterations: 204
-// Computed objective value:    21921.3995999992803263012
-// Target objective value:      21921.4032000000188418198
-// Relative error = 1.64e-07
-// Distance to polytope: 1.050194e-12
-//------------------------------------------------------------------------------
-
 /*============================== share2b LP problem ============================*
 // Number of equations: 13
 // Subspace dimension: 66
@@ -387,7 +353,7 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 // Distance to polytope: 1.1558067e-13
 //------------------------------------------------------------------------------
 
-/*============================== stocfor1 LP problem ===========================*/
+/*============================== stocfor1 LP problem ===========================*
 // Number of equations: 63
 // Subspace dimension: 48
 #define PP_PROBLEM_NAME		"stocfor1"	
@@ -395,8 +361,8 @@ LP problems are available in https://github.com/leonid-sokolinsky/Set-of-LP-Prob
 #define PP_N 111	// Number of variables in mps-file
 #define PP_MAX_OBJ_VALUE 41131.976219436406065682760731514 // Exact maximum value of objective function
 //------------------------------------------------------------------------------
-#define PP_EPS_ZERO				1E-9	// Accuracy for comparison with zero
-#define PP_EPS_ON_HYPERPLANE	1E-8	// Precision for point to be in halfspace
+#define PP_EPS_ZERO				1E-10	// Accuracy for comparison with zero
+#define PP_EPS_ON_HYPERPLANE	1E-10	// Precision for point to be in halfspace
 #define PP_EPS_RELATIVE_ERROR	1E-8	// Acceptable error for optimum of objective function
 //------------------------------------------------------------------------------
 // Elapsed time: 0

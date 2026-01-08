@@ -40,7 +40,6 @@ This source code has been produced with using BSF-skeleton
 #define PP_METHOD_NAME "VeRSAl"
 
 //-------------------------- Compilation Modes ---------------------------------
-#define PP_DEBUG
 #define PP_NORMALIZATION
 //#define PP_MATRIX_OUTPUT
 #define PP_SAVE_RESULT
